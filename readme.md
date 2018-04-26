@@ -5,7 +5,7 @@ This repo is a rough prototype for controlling a Roku device from an Alexa using
 **High level set up flow in the works**
 
 1. Electron client launches, establishes web socket connection with cloud
-2. Customer signs in with email code based authentication flow
+2. Customer signs in/signs up with email code based authentication flow
 3. Local server discovers roku device, sends device info up to cloud store
 4. Cloud generates 6 digit pairing code associated with customer account, sends down to Electorn client to display
 5. Customer enables skill through Alexa Skill Store, signs into account using 6 digit pairing code
