@@ -1,0 +1,14 @@
+{
+  "name": "ffroku",
+  "version": "1.0.0",
+  "description": "sails/electron support for voice control of roku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Fernandez",
+  "license": "ISC",
+  "dependencies": {
+    "node-ssdp": "^3.2.5"
+  }
+}

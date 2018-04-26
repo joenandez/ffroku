@@ -1,0 +1,25 @@
+<div>
+	<p><span>authorize?</span></p><br>
+	<a href='http://localhost:1337/oauth/authorize?authorized=true'>Click the link</a>
+</div>
+
+<script type="text/javascript" src="/js/dependencies/sails.io.js"></script>
+<script type="text/javascript">
+
+/// initialize websocket, check session
+console.log('launched');
+
+//get user/appId from cookies
+var appInstanceId = '1234';
+io.socket.get('/test/connect/?appInstanceId=' + appInstanceId, function gotResponse(resData, jwRes) {	
+    console.log(resData.status);
+});
+
+// handle video directives
+io.socket.on('hello', function (broadcastedData){
+	console.log('action: ' + broadcastedData.action + ' | entity: ' + broadcastedData.entity);
+});
+
+
+
+</script>

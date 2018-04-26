@@ -1,0 +1,10 @@
+{
+  "name": "ff-roku",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron-json-storage": "^4.0.2",
+    "node-ssdp": "^3.2.5",
+    "sails.io.js": "^1.1.13"
+  }
+}
