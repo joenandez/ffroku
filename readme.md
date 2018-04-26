@@ -1,4 +1,4 @@
-#Summary
+# Summary
 
 This repo is a rough prototype for controlling a Roku device from an Alexa using Video Skills API. Since Roku can be controlled through the local network, it requires an Electron App running on a Mac/PC to discovery, connect to, and send commands to the Roku device.
 
@@ -26,19 +26,19 @@ This repo is a rough prototype for controlling a Roku device from an Alexa using
 4. CLoud handles directive and passes down to client through websockets
 5. Search/Power handlers send local network command to Roku
 
-#Key Files:
+# Key Files:
 
-##Alexa Lambda
+## Alexa Lambda
 Event Handler: lambda.js
 * Handles Alexa voice directives, parses payload, sends directive to my cloud
 
-##Sails App
+## Sails App
 API Routes: roku-server/config/routes.js
 * API routes to establish socket connections, pass payload/directie through web sockets to client
 
 Controller: roku-server/api/controllers/TestController.js
 * Handles socket connection & communication with client, sending directives down, responses back to lambda
 
-##Electron App
+## Electron App
 Express Server: local-roku-client/main.js
 * Discovers Roku client, Initializes websocket connections, handles directievs from cloud, sends urls through local network to Roku
